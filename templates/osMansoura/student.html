@@ -1,0 +1,14 @@
+{% extends 'osMansoura/base.html' %} {%load static %} {% block title_block %}
+{{student.fname}} {{student.lname}} {% endblock %} {% block content %}
+<a href="/osMansoura/allstudents">
+  <img
+    src="{% static 'img/1.jpeg' %}
+  "
+    alt=""
+  />
+</a>
+<h4>Name: {{student.fname}} {{student.lname}}</h4>
+<h4>Age: {{student.age}}</h4>
+<h4>Track: {{student.student_track}}</h4>
+
+{% endblock %}
